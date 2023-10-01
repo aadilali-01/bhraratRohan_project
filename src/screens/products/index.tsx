@@ -49,22 +49,22 @@ const PageProduct = () => {
     <>
       <CuminBanner/>
       
-      <div ref={box} className='flex box relative min-h-screen'>
-        <div ref={image} className='h-full w-5/12'>
-          <img className='h-full w-full object-cover' src="/product.png" alt="Cumin image" />
+      <div ref={box} className='flex relative min-h-screen md:h-full max-md:flex-col'>
+        <div ref={image} className='h-full w-5/12 max-md:w-full max-md:h-96'>
+          <img className='h-full w-full object-cover' src="/cuminproduct.png" alt="Cumin image" />
         </div>
-        <div ref={rightBox} className='w-7/12 pl-9 pr-16'>
+        <div ref={rightBox} className='w-7/12 pl-9 pr-16 max-md:w-full md:w-7/12 max-md:pl-4 max-md:pr-4'>
           <div className='blade-top-margin'>
             <h4 className='font-bold text-emerald-900'>Cumin (Whole)</h4>
-            <div className='w-9/12 leading-tight mt-4'><small className='leading-none font-medium'>Sourced from our partner farms from the Marwar region (Rajasthan, India), we bring you residue-free pungent-flavoured cumin seeds of different sizes and colours that are second to none. From tacos to curries, from soups to savouries, our range of cumin seeds adheres to global quality and food safety mandates.</small></div>
+            <div className='w-9/12 leading-tight mt-4 max-md:w-full'><small className='leading-none font-medium'>Sourced from our partner farms from the Marwar region (Rajasthan, India), we bring you residue-free pungent-flavoured cumin seeds of different sizes and colours that are second to none. From tacos to curries, from soups to savouries, our range of cumin seeds adheres to global quality and food safety mandates.</small></div>
           </div>
-          <div className='w-full h-px bg-gray-300 mt-5 mb-5'></div>
+          <div className='w-full h-px bg-gray-300 mt-5 mb-5 max-md:mb-3'></div>
           <div>
             <h6 className='text-emerald-900 font-medium'>Origin</h6>
             <div className='flex items-center gap-14 mt-2'>
-              <small className='font-medium'><span className='opacity-70'>Country:</span> India</small>
-              <small className='font-medium'><span className='opacity-70'>State:</span> Rajasthan</small>
-              <small className='font-medium'><span className='opacity-70'>Region:</span> Pali</small>
+              <small className='font-medium max-md:flex'><span className='opacity-70'>Country:</span> India</small>
+              <small className='font-medium max-md:flex'><span className='opacity-70'>State:</span> Rajasthan</small>
+              <small className='font-medium max-md:flex'><span className='opacity-70'>Region:</span> Pali</small>
             </div>
           </div>
           <div className='w-full h-px bg-gray-300 mt-5 mb-5'></div>
@@ -73,9 +73,9 @@ const PageProduct = () => {
           
           <div className='bg-white' >
             <div className='flex items-center gap-14 blade-top-margin'>
-              <h6 onClick={() => handleSectionClick('variant')} className={`text-sm font-medium cursor-pointer transition-opacity duration-400 ${activeSection === 'variant' ? 'opacity-100' : 'opacity-50'}`}>VARIENT DETAILS</h6>
-              <h6 onClick={() => handleSectionClick('cancellation')} className={`text-sm font-medium cursor-pointer transition-opacity duration-400 ${activeSection === 'cancellation' ? 'opacity-100' : 'opacity-50'}`}>CANCELLATION & REFUND</h6>
-              <h6 onClick={() => handleSectionClick('shipping')} className={`text-sm font-medium cursor-pointer transition-opacity duration-400 ${activeSection === 'shipping' ? 'opacity-100' : 'opacity-50'}`}>SHIPPING POLICY</h6>
+              <h6 onClick={() => handleSectionClick('variant')} className={`text-sm font-medium cursor-pointer transition-opacity duration-400 max-md:text-center ${activeSection === 'variant' ? 'opacity-100' : 'opacity-50'}`}>VARIENT DETAILS</h6>
+              <h6 onClick={() => handleSectionClick('cancellation')} className={`text-sm font-medium cursor-pointer transition-opacity duration-400 max-md:text-center ${activeSection === 'cancellation' ? 'opacity-100' : 'opacity-50'}`}>CANCELLATION & REFUND</h6>
+              <h6 onClick={() => handleSectionClick('shipping')} className={`text-sm font-medium cursor-pointer transition-opacity duration-400 max-md:text-center ${activeSection === 'shipping' ? 'opacity-100' : 'opacity-50'}`}>SHIPPING POLICY</h6>
             </div>
             <div className='w-full h-px bg-gray-300 mt-2 mb-5 flex items-center gap-12'>
               <div className={`h-full w-28 bg-black transition-opacity duration-400 ${activeSection === 'variant' ? 'opacity-100' : 'opacity-0'}`}></div>
@@ -88,15 +88,15 @@ const PageProduct = () => {
 
             {/* Varient Details Box */}
             <div className={`transition-all blade-bottom-margin ${activeSection === 'variant' ? 'translate-x' : '-translate-x-full'}`}>
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 bg-gray-100 px-4 py-2">
-                <div className='font-medium flex items-center'><small>Varient</small></div>
-                <div className='font-medium opacity-40 flex items-center justify-center'><small>Package size</small></div>
-                <div className='font-medium opacity-40 flex items-center justify-center'><small>Moisture</small></div>
-                <div className='font-medium opacity-40 flex items-center justify-center'><small>Purity</small></div>
-                <div className='font-medium opacity-40 flex items-center justify-start'><small>Description</small></div>
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 bg-gray-100 px-4 py-2 max-md:gap-x-2">
+                <div className='font-medium flex items-center max-md:items-start max-md:text-sm'><small>Varient</small></div>
+                <div className='font-medium opacity-40 flex items-center justify-center max-md:items-start max-md:text-center max-md:text-sm'><small>Package size</small></div>
+                <div className='font-medium opacity-40 flex items-center justify-center max-md:items-start max-md:text-sm'><small>Moisture</small></div>
+                <div className='font-medium opacity-40 flex items-center justify-center max-md:items-start max-md:text-sm'><small>Purity</small></div>
+                <div className='font-medium opacity-40 flex items-center justify-start max-md:items-start max-md:text-sm'><small>Description</small></div>
               </div>
   
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera Dolphin (R)</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>30 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>8%</small></div>
@@ -104,7 +104,7 @@ const PageProduct = () => {
                 <div className='font-medium flex items-center justify-start'><small className='font-size'>Regular colour & medium size seeds with cutting material, below 6% much,</small></div>
               </div>
   
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 bg-fuchsia-50">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 bg-fuchsia-50 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera Dolphin (R) Sortex</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>30 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>8%</small></div>
@@ -112,7 +112,7 @@ const PageProduct = () => {
                 <div className='font-medium flex items-center justify-start'><small className='font-size'>Machine clean packing quality good colour & medium size seeds with cutting material</small></div>
               </div>
   
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera Gold (G) Sortex</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>30 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>8%</small></div>
@@ -120,7 +120,7 @@ const PageProduct = () => {
                 <div className='font-medium flex items-center justify-start'><small className='font-size'>Bold bright colour & bold size seeds with cutting material, below 6% much. 0.50% max.impurity</small></div>
               </div>
               
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 bg-fuchsia-50">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 bg-fuchsia-50 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera Heritage (F)</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>25 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>8%</small></div>
@@ -128,7 +128,7 @@ const PageProduct = () => {
                 <div className='font-medium flex items-center justify-start'><small className='font-size'>Machine clean packing quality good colour & medium size seeds</small></div>
               </div>
               
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera JP Silver (P)</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>30 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>8%</small></div>
@@ -136,7 +136,7 @@ const PageProduct = () => {
                 <div className='font-medium flex items-center justify-start'><small className='font-size'>Premium packing bright colour & medium size seeds with cutting material</small></div>
               </div>
               
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 bg-fuchsia-50">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 bg-fuchsia-50 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera Sunflower(S)</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>30 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>10%</small></div>
@@ -144,7 +144,7 @@ const PageProduct = () => {
                 <div className='font-medium flex items-center justify-start'><small className='font-size'>Average colour & size seeds 1% max.impurity</small></div>
               </div>
               
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera Taj</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>30 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>10%</small></div>
@@ -152,7 +152,7 @@ const PageProduct = () => {
                 <div className='font-medium flex items-center justify-start'><small className='font-size'>Average colour & size seeds lowest machine clean quality</small></div>
               </div>
               
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 bg-fuchsia-50">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 bg-fuchsia-50 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera Tiptop (V)</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>30 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>8%</small></div>
@@ -160,7 +160,7 @@ const PageProduct = () => {
                 <div className='font-medium flex items-center justify-start'><small className='font-size'>Semi bold bright colour & medium bold size seeds with cutting material</small></div>
               </div>
               
-              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2">
+              <div className="grid grid-cols-[1.5fr,1.4fr,repeat(2,1fr),2.7fr] grid-rows-[.1fr] gap-x-15 px-4 py-2 max-md:gap-x-2">
                 <div className='font-medium flex items-center'><small className='font-size'>Jeera VA (O)</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>25 kg</small></div>
                 <div className='font-medium flex items-center justify-center'><small className='font-size'>8%</small></div>
@@ -170,7 +170,7 @@ const PageProduct = () => {
             </div>
             
             {/* Cancel Details Box */}
-            <div className={`flex flex-col	gap-3 absolute top-0 transition-all ${activeSection === 'cancellation' ? 'translate-x' : 'translate-x-full'} ${activeSection === 'shipping' ? '-translate-x-full' : 'translate-x'}`}>
+            <div className={`flex flex-col	gap-3 absolute top-0 transition-all ${activeSection === 'cancellation' ? 'translate-x' : 'translate-x-full'}`}>
               <div className='flex text-sm gap-2 font-medium'>
                 <small>1.</small>
                 <small>Orders cannot be cancelled after confirmation and successful payment. Customers are not eligible for a refund.</small>
