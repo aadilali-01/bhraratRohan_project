@@ -60,10 +60,10 @@ const PageProduct = () => {
       <CuminBanner/>
       
       <div ref={box} className={`flex relative min-h-screen md:h-full max-md:flex-col max-lg:flex-col`}>
-        <div ref={image} className='sticky top-0 h-screen bg-black w-2/5 max-md:w-full max-sm:h-[25rem] max-lg:static max-lg:w-full max-lg:h-[40rem]'>
+        <div ref={image} className='sticky top-0 2xl:w-3/6 h-screen w-2/5 max-md:w-full max-sm:h-[25rem] max-lg:static max-lg:w-full max-lg:h-[40rem]'>
           <img className='h-full w-full object-cover max-lg:object-center max-sm:object-center' src="/frame.jpg" alt="Cumin image" />
         </div>
-        <div className='w-3/5 pl-7 pr-16 max-md:w-full max-sm:pl-5 max-sm:pr-7 max-lg:w-full max-lg:pl-16'>
+        <div className='w-3/5 min-[1920px]:w-3/6 pl-7 pr-16 max-md:w-full max-sm:pl-5 max-sm:pr-7 max-lg:w-full max-lg:pl-16'>
           <div className='blade-top-margin'>
             <h4 className='font-bold text-4xl text-emerald-900 max-sm:text-2xl max-md:text-3xl'>Cumin (Whole)</h4>
             <div className='w-full font-normal text-xl mt-4 max-md:w-full max-sm:text-sm max-md:text-lg max-lg:w-full'>Sourced from our partner farms from the Marwar region (Rajasthan, India), we bring you residue-free pungent-flavoured cumin seeds of different sizes and colours that are second to none. From tacos to curries, from soups to savouries, our range of cumin seeds adheres to global quality and food safety mandates.</div>
@@ -79,9 +79,9 @@ const PageProduct = () => {
           </div>
           <div className='w-full h-px bg-gray-300 mt-5 mb-5 max-lg:mb-7 max-lg:mt-7'></div>
 
-          <button className='text-xs text-white py-2.5 px-10 rounded-3xl outline-none bg-emerald-900 max-lg:text-xl hover:bg-emerald-700 transition duration-300 ease-in-out'>Buy now</button>
+          <button className='text-xs text-white py-2.5 px-10 rounded-3xl outline-none bg-emerald-900 max-lg:text-xl hover:bg-emerald-700 transition duration-300 ease-in-out max-sm:w-full max-sm:text-lg'>Buy now</button>
           
-          <div id='content'>
+          <div>
             <div className='bg-white w-full' >
               <div className='flex items-start justify-between blade-top-margin text-center'>
                 <h6 onClick={() => handleSectionClick('variant')} className={`text-xl font-medium cursor-pointer transition-opacity duration-400 max-sm:text-center max-sm:text-sm max-md:text-center max-md:text-lg max-lg:text-center max-lg:text-2xl ${activeSection === 'variant' ? 'opacity-100' : 'opacity-50'}`}>VARIENT DETAILS</h6>
@@ -108,80 +108,80 @@ const PageProduct = () => {
                 </div>
     
                 <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Dolphin (R)</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Regular colour & medium size seeds with cutting material, below 6% much,</small></div>
+                  <div className='text-lg font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Dolphin (R)</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Regular colour & medium size seeds with cutting material, below 6% much,</small></div>
                 </div>
     
-                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 bg-fuchsia-50 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Dolphin (R) Sortex</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.75%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Machine clean packing quality good colour & medium size seeds with cutting material</small></div>
+                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 bg-[#FBF7F3] max-sm:py-1.5">
+                  <div className='text-lg font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Dolphin (R) Sortex</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.75%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Machine clean packing quality good colour & medium size seeds with cutting material</small></div>
                 </div>
     
                 <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Gold (G) Sortex</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Bold bright colour & bold size seeds with cutting material, below 6% much. 0.50% max.impurity</small></div>
+                  <div className='text-lg font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Gold (G) Sortex</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Bold bright colour & bold size seeds with cutting material, below 6% much. 0.50% max.impurity</small></div>
                 </div>
                 
-                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 bg-fuchsia-50 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Heritage (F)</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>25 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Machine clean packing quality good colour & medium size seeds</small></div>
-                </div>
-                
-                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera JP Silver (P)</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Premium packing bright colour & medium size seeds with cutting material</small></div>
-                </div>
-                
-                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 bg-fuchsia-50 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Sunflower (S)</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>10%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Average colour & size seeds 1% max.impurity</small></div>
+                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 bg-[#FBF7F3] max-sm:py-1.5">
+                  <div className='text-lg font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Heritage (F)</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>25 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Machine clean packing quality good colour & medium size seeds</small></div>
                 </div>
                 
                 <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Taj</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>10%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>98%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Average colour & size seeds lowest machine clean quality</small></div>
+                  <div className='text-lg font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera JP Silver (P)</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Premium packing bright colour & medium size seeds with cutting material</small></div>
                 </div>
                 
-                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 bg-fuchsia-50 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Tiptop (V)</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Semi bold bright colour & medium bold size seeds with cutting material</small></div>
+                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 bg-[#FBF7F3] max-sm:py-1.5">
+                  <div className='text-lg font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Sunflower (S)</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>10%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Average colour & size seeds 1% max.impurity</small></div>
                 </div>
                 
                 <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 max-sm:py-1.5">
-                  <div className='text-base font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera VA (O)</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>25 kg</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
-                  <div className='text-base font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
-                  <div className='text-base col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Extra bold bright colour & extra bold size seeds with cutting material</small></div>
+                  <div className='text-lg font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Taj</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>10%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>98%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Average colour & size seeds lowest machine clean quality</small></div>
+                </div>
+                
+                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 bg-[#FBF7F3] max-sm:py-1.5">
+                  <div className='text-balgse font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera Tiptop (V)</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>30 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Semi bold bright colour & medium bold size seeds with cutting material</small></div>
+                </div>
+                
+                <div className="grid grid-cols-6 grid-rows-1 px-4 py-2 max-sm:py-1.5">
+                  <div className='text-lg font-normal flex items-center max-sm:text-sm max-lg:text-xl'><small>Jeera VA (O)</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>25 kg</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>8%</small></div>
+                  <div className='text-lg font-normal flex items-center justify-center max-sm:text-sm max-lg:text-xl'><small>99.5%</small></div>
+                  <div className='text-lg col-span-2 font-normal flex items-center justify-start max-sm:text-sm max-lg:text-xl'><small>Extra bold bright colour & extra bold size seeds with cutting material</small></div>
                 </div>
               </div>
               
               {/* Cancel Details Box */}
-              <div className={`flex flex-col gap-3 absolute top-0 transition-all ${activeSection === 'cancellation' ? 'translate-x' : 'translate-x-[200%]'}`}>
+              <div className={`flex flex-col 2xl:w-[772px] 2xl:w-[772px] gap-3 absolute top-0 transition-all ${activeSection === 'cancellation' ? 'translate-x' : 'translate-x-[200%]'}`}>
                 <div className='flex text-lg gap-2 font-medium max-lg:text-2xl max-sm:text-xl'>
                   <small>1.</small>
                   <small>Orders cannot be cancelled after confirmation and successful payment. Customers are not eligible for a refund.</small>
@@ -197,12 +197,12 @@ const PageProduct = () => {
               </div>
   
               {/* Shipping Details Box */}
-              <div className={`flex flex-col	gap-3 absolute top-0 transition-all ${activeSection === 'shipping' ? 'translate-x' : 'translate-x-[200%]'}`}>
+              <div className={`flex 2xl:w-[772px] flex-col gap-3 absolute top-0 transition-all ${activeSection === 'shipping' ? 'translate-x' : 'translate-x-[200%]'}`}>
                 <div className='flex text-lg gap-2 font-medium max-lg:text-2xl max-sm:text-xl'>
                   <small>1.</small>
                   <small>All orders are subject to availability and confirmation of order price. We inform our customers by SMS or e-mail on order confirmation.</small>
                 </div>
-                <div className='flex text-lg gap-2 font-medium max-lg:text-2xl max-sm:text-xl'>
+                <div className='flex text-lg gap-1.5 font-medium max-lg:text-2xl max-sm:text-xl'>
                   <small>2.</small>
                   <small>Orders are shipped in 7 business days after confirmation. The shipping address can not be altered after the order is shipped.</small>
                 </div>
